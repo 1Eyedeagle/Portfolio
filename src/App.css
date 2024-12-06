@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body h2{
+  font-size: 48px;
+}
+/* -----------------------------------------------------HEADER ----------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+/* -----------------------------------------------------HOME------------------------------ */
+#home .introduction{
+  height: 100%;
+}
+/* -----------------------------------------------------SKILLS---------------------------- */
+#skills .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 20px; /* Adds space between grid items */
+  padding: 20px;
+}
+.grid-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+.grid-item:hover{
+  background-color: #000000;
+  font-size: 16px;
+  color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:1050px) {
+  #skills .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between grid items */
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+}
+/* -----------------------------------------------------EXPERIENCE------------------------ */
+#experience{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#experience .row{
+  gap: 28px;
+}
+.experience-item{
+  border: 2px solid white;
+  padding: 30px 24px;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width:1050px) {
+  h2{
+    font-size: 32px;
+  }
+  .duration time{
+    font-size: 16px;
+  }
+  #experience h4{
+    font-size: 20px;
+  }
+
+}
+
+/* -----------------------------------------------------PROJECTS-------------------------- */
+.projects .project-card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+/* -----------------------------------------------------ABOUT ME-------------------------- */
+#about .about-content{
+  text-align: start;
+}
+/* -----------------------------------------------------FOOTER---------------------------- */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
