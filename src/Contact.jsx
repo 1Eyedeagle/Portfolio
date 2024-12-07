@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container py-1" id='contact'>
+    <div className="container py-1 pb-5 mb-5g" id='contact'>
       <div className="row justify-content-between align-items-center">
         {/* Form Section */}
         <form onSubmit={handleSubmit} className="form-container col-lg-6 col-12 mb-4">
