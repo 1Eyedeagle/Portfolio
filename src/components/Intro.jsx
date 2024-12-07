@@ -1,15 +1,20 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Banner from "../images/Banner.png";
 
-const Home = () => {
+const Intro = () => {
   return (
     <section id="home" className="home pt-0">
       <div className="container-fluid">
-        <div className="row align-items-center" style={{ height: '100vh' }}> {/* Ensures full viewport height */}
+        <div className="row align-items-center" style={{ height: "100vh" }}>
+          {" "}
+          {/* Ensures full viewport height */}
           <div className="col-lg-6 col-12">
-            <img src="/images/Banner.png" alt="Banner" className="img-fluid" /> {/* img-fluid for responsive image */}
+            <img src={Banner} alt="Banner" className="img-fluid" />
+            {/* img-fluid for responsive image */}
           </div>
-          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center text-center"> {/* Flexbox for centering text */}
+          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center text-center">
+            {" "}
+            {/* Flexbox for centering text */}
             <div>
               <h2>Hello, I am Ishu Sharma.</h2>
               <h3> Frontend Developer Based In India.</h3>
@@ -24,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Intro;

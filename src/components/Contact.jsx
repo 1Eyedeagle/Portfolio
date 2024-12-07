@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -18,16 +17,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Form submitted successfully!');
-    setFormData({ name: '', email: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert("Form submitted successfully!");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className="container py-1 pb-5 mb-5g" id='contact'>
+    <div className="container py-1 pb-5 mb-5" id="contact">
       <div className="row justify-content-between align-items-center">
         {/* Form Section */}
-        <form onSubmit={handleSubmit} className="form-container col-lg-6 col-12 mb-4">
+        <form
+          onSubmit={handleSubmit}
+          className="form-container col-lg-6 col-12 mb-4"
+        >
           <h2 className="mb-4">Contact Us</h2>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
@@ -83,14 +85,18 @@ const Contact = () => {
         <div className="contact-info col-lg-5 col-12">
           <h2 className="mb-3">Let's talk about something special.</h2>
           <p className="mb-3">
-            I seek to push the limits of creativity to create highly engaging, user-friendly, and memorable interactive experiences.
+            I seek to push the limits of creativity to create highly engaging,
+            user-friendly, and memorable interactive experiences.
           </p>
           <p className="mb-1">
-            <strong>Email:</strong>{' '}
-            <a href="mailto:ishusharma882003@gmail.com">ishusharma882003@gmail.com</a>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:ishusharma882003@gmail.com">
+              ishusharma882003@gmail.com
+            </a>
           </p>
           <p>
-            <strong>Phone:</strong> <a href="tel:+919911900710">+91 9911900710</a>
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+919911900710">+91 9911900710</a>
           </p>
         </div>
       </div>

@@ -1,20 +1,20 @@
-import React from 'react';
-import Header from './Header.jsx';
-import Home from './home.jsx';
-import Skills from './Skills.jsx';
-import Experience from './Experience.jsx';
-import About from './About.jsx';
-import Projects from './Project.jsx';
-import Contact from './Contact.jsx';
-import Footer from './Footer.jsx';
-import './App.css';
+import React from "react";
+import Header from "./components/Header.jsx";
+import Intro from "./components/Intro.jsx";
+import Skills from "./components/Skills.jsx";
+import Experience from "./components/Experience.jsx";
+import About from "./components/About.jsx";
+import Projects from "./components/Project.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <main>
-        <Home />
+        <Intro />
         <Skills />
         <Experience />
         <About />
