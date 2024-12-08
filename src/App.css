@@ -3,35 +3,79 @@ body {
   font-family: Arial, sans-serif;
 }
 
-body h2{
+body h2 {
   font-size: 48px;
 }
 /* -----------------------------------------------------HEADER ----------------------------*/
-header {
+/* General reset and default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
-  color: white;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
 }
 
-nav ul{
-  display: flex;
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links ul {
   list-style: none;
-}
-header a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
+  display: flex;
+  gap: 20px;
 }
 
-section {
-  padding: 2rem;
-  text-align: center;
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
 }
+
+.nav-links li a:hover {
+  color: #f0f0f0;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 /* -----------------------------------------------------HOME------------------------------ */
-#home .introduction{
+#home .introduction {
   height: 100%;
 }
 /* -----------------------------------------------------SKILLS---------------------------- */
@@ -49,7 +93,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 18px;
 }
-.grid-item:hover{
+.grid-item:hover {
   background-color: #000000;
   font-size: 16px;
   color: white;
@@ -59,14 +103,14 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width:1050px) {
+@media (max-width: 1050px) {
   #skills .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
     gap: 20px; /* Adds space between grid items */
     padding: 20px;
   }
-  
+
   .grid-item {
     background-color: #ffffff;
     font-size: 16px;
@@ -75,37 +119,33 @@ section {
     border: 2px solid black;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   }
 }
 /* -----------------------------------------------------EXPERIENCE------------------------ */
-#experience{
+#experience {
   background-color: #000000;
   color: #ffffff;
 }
 
-#experience .row{
+#experience .row {
   gap: 28px;
 }
-.experience-item{
+.experience-item {
   border: 2px solid white;
   padding: 30px 24px;
   border-radius: 10px;
 }
 
-
-
-@media (max-width:1050px) {
-  h2{
+@media (max-width: 1050px) {
+  h2 {
     font-size: 32px;
   }
-  .duration time{
+  .duration time {
     font-size: 16px;
   }
-  #experience h4{
+  #experience h4 {
     font-size: 20px;
   }
-
 }
 
 /* -----------------------------------------------------PROJECTS-------------------------- */
@@ -116,7 +156,7 @@ section {
   border-radius: 8px;
 }
 /* -----------------------------------------------------ABOUT ME-------------------------- */
-#about .about-content{
+#about .about-content {
   text-align: start;
 }
 /* -----------------------------------------------------FOOTER---------------------------- */

@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">MyPortfolio</div>
-      <nav>
+      <div className="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      <nav className="nav-links">
         <ul>
           <li>
             <a href="#about">About</a>
