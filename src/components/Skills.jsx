@@ -3,9 +3,11 @@ import React from "react";
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <div className="container-fluid">
+      <div className="container">
         <h2>
-          My <strong>Skills</strong>
+          <center>
+            <strong> My Skills</strong>
+          </center>
         </h2>
         <div className="grid-container">
           <div className="grid-item">HTML</div>

@@ -4,17 +4,12 @@ import Group from "../images/Group.png";
 const About = () => {
   return (
     <section id="about" className="about ">
-      <div className="container-fluid">
-        <div className="row align-items-center" style={{ height: "80vh" }}>
-          {" "}
-          {/* Ensures full viewport height */}
+      <div className="container">
+        <div className="row align-items-center">
           <div className="col-lg-6 col-12">
-            <img src={Group} alt="Banner" className="img-fluid" />{" "}
-            {/* img-fluid for responsive image */}
+            <img src={Group} alt="Banner" className="img-fluid" />
           </div>
           <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center text-center">
-            {" "}
-            {/* Flexbox for centering text */}
             <div className="about-content">
               <h2>
                 About <strong>Me</strong>
@@ -34,14 +29,14 @@ const About = () => {
                 Now, in my early thirties, 7 years after starting my web
                 development journey, I'm building cutting-edge web applications
                 using modern technologies such as Next.js, TypeScript, Nestjs,
-                Tailwindcss, Supabase and much more.{" "}
+                Tailwindcss, Supabase and much more.
               </p>
               <p>
                 When I'm not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
                 early startups or enjoying some free time. You can follow me on
                 Twitter where I share tech-related bites and build in public, or
-                you can follow me on GitHub.{" "}
+                you can follow me on GitHub.
               </p>
             </div>
           </div>

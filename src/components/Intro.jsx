@@ -4,7 +4,7 @@ import Banner from "../images/Banner.png";
 const Intro = () => {
   return (
     <section id="home" className="home pt-0">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row align-items-center" style={{ height: "100vh" }}>
           {" "}
           {/* Ensures full viewport height */}
