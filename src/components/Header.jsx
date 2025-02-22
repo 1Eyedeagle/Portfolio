@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header ps-5 pe-5">
       <div className="logo">MyPortfolio</div>
       <div className="hamburger" onclick="toggleMenu()">
         &#9776;

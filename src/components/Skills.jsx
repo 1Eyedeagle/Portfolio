@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <div className="container">
+      <div className="container p-5">
         <h2>
           <center>
             <strong> My Skills</strong>
